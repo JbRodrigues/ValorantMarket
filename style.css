@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Valorant;
+    src: url(./Valorant\ Font.ttf);
+}
+
+html,
+body {
+    font-family: Valorant;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(209 209 209 / 27%);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "sidearms smgs rifles sniper armor"
+        "sidearms shotguns rifles machineguns armor";
+    height: 80%;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid blue;
+}
+
+.box{
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
+    border: 1px solid;
+
+}
+
+.smgs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "stinger"
+        "spectre";
+    grid-area: smgs;
+    
+}
+
+#stinger {
+    grid-area: stinger;
+}
+
+#spectre {
+    grid-area: spectre;
+}
+
+.rifles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "bulldog"
+        "guardian"
+        "phanton"
+        "vandal";
+    grid-area: rifles;
+    
+}
+
+#bulldog {
+    grid-area: bulldog;
+}
+
+#guardian {
+    grid-area: guardian;
+}
+
+#phanton {
+    grid-area: phanton;
+}
+
+#vandal {
+    grid-area: vandal;
+}
+
+.sniper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "marshal"
+        "operator";
+    grid-area: sniper;
+    
+}
+
+#marshal {
+    grid-area: marshal;
+}
+
+#operator {
+    grid-area: operator;
+}
+
+.armor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "light-shield"
+        "heavy-shield";
+    grid-area: armor;
+    
+}
+
+#light-shield {
+    grid-area: light-shield;
+}
+
+#heavy-shield {
+    grid-area: heavy-shield;
+}
+
+.shotguns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "bucky"
+        "judge";
+    grid-area: shotguns;
+    
+}
+
+#bucky {
+    grid-area: bucky;
+}
+
+#judge {
+    grid-area: judge;
+}
+
+.machineguns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "ares"
+        "odin";
+    grid-area: machineguns;
+   
+}
+
+#ares {
+    grid-area: ares;
+}
+
+#odin {
+    grid-area: odin;
+}
+
+.sidearms {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "classic"
+        "shorty"
+        "frenzy"
+        "ghost"
+        "sherif";
+    grid-area: sidearms;
+    
+}
+
+#classic {
+    grid-area: classic;
+}
+
+#shorty {
+    grid-area: shorty;
+}
+
+#frenzy {
+    grid-area: frenzy;
+}
+
+#ghost {
+    grid-area: ghost;
+}
+
+#sherif {
+    grid-area: sherif;
+}
