@@ -319,8 +319,9 @@ body {
         "light-shield"
         "heavy-shield";
     grid-area: armor;
-    margin-left: 25px;
+    margin-left: 22px;
     margin-right: 25px;
+    
 }
 
 #light-shield {
