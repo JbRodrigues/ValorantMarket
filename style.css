@@ -41,24 +41,43 @@ body {
 
 .box {
     display: flex;
-    background-color: rgb(209 209 209 / 27%);
-    justify-content: end;
-    align-items: flex-start;
+    background-color: rgb(209 209 209 / 60%);
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
+    margin: 0.1rem;
     width: 98%;
-    height: 98%;
+    height: auto;
+    position: relative;
 
 }
 
-.img-guns{
+.textBox {
     display: flex;
-    justify-content: end;
+    justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;
-    width: 90%;
-    height: 90%;
-    margin: 0.5rem;
+    margin-left: 1.5rem;
+    width: 100%;
 }
+
+.img-guns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    height: 40px;
+    width: 100%;
+
+}
+
+.heavyArmor{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
 
 .SMG {
     display: grid;
@@ -203,7 +222,7 @@ body {
 .Sidearm {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -214,6 +233,7 @@ body {
         "ghost"
         "sherif";
     grid-area: sidearms;
+    overflow: hidden;
 }
 
 #title {
